@@ -1,0 +1,38 @@
+export const dummy = [
+  {
+    _id: "1",
+    name: "Ban 1",
+    imageUrl: "https://images.unsplash.com/photo-1578844251758-2f71da64c96f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 1000,
+    description: "ini ban berkualitas tinggi coy",
+    category: "Dunlop",
+    stock: 3,
+  },
+  {
+    _id: "2",
+    name: "Ban 2",
+    imageUrl: "https://images.unsplash.com/photo-1601411101851-ea0e07766235?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 2000,
+    description: "ini ban berkualitas tinggi coy",
+    category: "IRC",
+    stock: 3,
+  },
+  {
+    _id: "3",
+    name: "Ban 3",
+    imageUrl: "https://images.unsplash.com/photo-1580053852056-f3992ab1e5e5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 3000,
+    description: "ini ban berkualitas tinggi coy",
+    category: "Bridgestone",
+    stock: 3,
+  },
+  {
+    _id: "4",
+    name: "Ban 4",
+    imageUrl: "https://images.unsplash.com/photo-1701336843410-31897aea08a3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    price: 4000,
+    description: "ini ban berkualitas tinggi coy",
+    category: "Michelin",
+    stock: 3,
+  },
+];
