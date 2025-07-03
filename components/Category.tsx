@@ -3,7 +3,7 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 
-const categories = ["Semua", "Komplit", "Ban Dalam", "Ban Luar", "Jari-jari", "Vleg", "Bosh"];
+const categories = ["Semua", "Komplit", "Ban Dalam", "Ban Luar", "Vleg", "Aksesoris"];
 
 export default function Category({ selectedCategory, setSelectedCategory }: { selectedCategory: string; setSelectedCategory: (value: string) => void }) {
   return (

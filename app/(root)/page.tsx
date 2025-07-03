@@ -1,13 +1,13 @@
 import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
-import { dummy } from "@/lib/dummy";
 import { Product } from "@/lib";
 import Link from "next/link";
 import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa";
 import ChatBot from "@/components/ChatBot";
+import { fetchBestSellerProducts } from "@/lib/actions";
 
 export default async function Home() {
-  const products = dummy;
+  const products = await fetchBestSellerProducts();
   return (
     <>
       {/* Main */}
@@ -34,7 +34,7 @@ export default async function Home() {
       <section className=" product-best">
         <div className=" px-8 py-8">
           <h1 className=" text-3xl font-bold text-gray-800"> Best Seller:</h1>
-          <ul className="card_grid mt-7">{products?.length > 0 ? products.map((product: Product, index) => <ProductCard key={index} product={product} />) : <p className="no-result">No Product found</p>}</ul>
+          <ul className="card_grid mt-7">{products?.length > 0 ? products.map((product: Product, index: any) => <ProductCard key={index} product={product} />) : <p className="no-result">No Product found</p>}</ul>
         </div>
       </section>
 

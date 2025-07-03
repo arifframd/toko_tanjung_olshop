@@ -95,3 +95,14 @@ export const createReviewUser = async (userId: string, rating: number, review: s
     console.log("Error saat fetching review ", err);
   }
 };
+
+export const fetchBestSellerProducts = async () => {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products/best`);
+    const { data } = await res.json();
+    return data;
+  } catch (err) {
+    console.log("Error saat fetching best seller products", err);
+    return [];
+  }
+};
