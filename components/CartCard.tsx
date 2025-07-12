@@ -45,7 +45,7 @@ const CartCard = ({ cart, userId }: { cart: CartItems; userId: string }) => {
 
       <div className="col-span-5 flex items-center gap-4">
         <Image src={imageUrl} alt={name} width={80} height={80} className="rounded-lg border w-20 h-20 object-cover" />
-        <Link href={`/product/${productId}`}>
+        <Link href={`/product/${productId}/detail`}>
           <h2 className="text-base font-medium text-gray-800 hover:underline">{name}</h2>
         </Link>
       </div>
