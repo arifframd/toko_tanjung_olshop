@@ -30,7 +30,7 @@ const ProductCard = ({ product }: { product: Product }) => {
           <Image src={imageUrl} alt="Ban" width={200} height={100} className="product-image" />
           <div className="product-content">
             <div className="flex justify-between items-center">
-              <Link href={`/product/${_id}`}>
+              <Link href={`/product/${_id}/detail`}>
                 <h2 className="product-title">{name}</h2>
               </Link>
               <Button className=" icon-circle bg-white hover:bg-gray-100 cursor-pointer" onClick={onAdd}>
