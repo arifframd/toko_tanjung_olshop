@@ -41,7 +41,7 @@ const CartCard = ({ cart, userId }: { cart: CartItems; userId: string }) => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 items-center gap-4 py-4 border-b last:border-b-0">
-      {isCheckout && <CheckoutForm imageUrl={imageUrl} name={name} id={productId} quantity={quantity} price={price} onClose={() => setIsCheckout(false)} />}
+      {isCheckout && <CheckoutForm userId={userId} products={[{ product_id: productId, product_name: name, imageUrl: imageUrl, price: price, quantity: 1, subtotal: price * 1 }]} onClose={() => setIsCheckout(false)} />}
 
       <div className="col-span-5 flex items-center gap-4">
         <Image src={imageUrl} alt={name} width={80} height={80} className="rounded-lg border w-20 h-20 object-cover" />

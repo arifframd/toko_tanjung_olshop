@@ -5,7 +5,7 @@ import { Clock, PenBoxIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { CiShoppingCart } from "react-icons/ci";
+import { CiCircleInfo, CiShoppingCart } from "react-icons/ci";
 
 const page = async () => {
   const session = await auth();
@@ -30,6 +30,16 @@ const page = async () => {
         {/* Menu Akun */}
         <div className="flex flex-col gap-4">
           <h3 className="text-xl font-semibold text-gray-800">Menu Akun</h3>
+
+          <Link href={`/user/${session?.id}/info`} className="flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:bg-gray-50 transition">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">
+                <CiCircleInfo />
+              </span>
+              <span className="font-medium text-gray-800">Info</span>
+            </div>
+            <span className="text-gray-400 text-sm">Lihat →</span>
+          </Link>
 
           <Link href={`/user/${session?.id}/cart`} className="flex items-center justify-between p-4 rounded-xl border border-gray-200 hover:bg-gray-50 transition">
             <div className="flex items-center gap-3">

@@ -106,3 +106,25 @@ export const fetchBestSellerProducts = async () => {
     return [];
   }
 };
+
+export const fetchUserInfo = async (id: string | undefined) => {
+  try {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/users/info/${id}`);
+    const data = await res.json();
+    return data;
+  } catch (err) {
+    console.log("Error saat fetching user info", err);
+    return null;
+  }
+};
+
+export const fetchSession = async () => {
+  try {
+    const res = await fetch(`${process.env.NEXT_URL}/api/session`);
+    const { user } = await res.json();
+    return user;
+  } catch (err) {
+    console.log("Error saat fetching session", err);
+    return null;
+  }
+};

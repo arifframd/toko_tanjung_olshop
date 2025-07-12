@@ -23,6 +23,7 @@ export interface CartItems {
 }
 
 export interface CheckoutProps {
+  userId: string | undefined;
   onClose: () => void;
   imageUrl: string;
   id: string;
@@ -47,14 +48,17 @@ export interface TransactionProps {
 
 export interface OrderHistoryProps {
   order_id: string;
-  imageUrl: string;
-  quantity: number;
+  products: OrderProducts[];
   total: number;
   status: string;
   createdAt: any;
-  product_name: string;
 }
 
 export type OrderHistoryPropsTypes = {
   orders: OrderHistoryProps[];
 };
+
+export interface OrderProducts {
+  product_name: string;
+  imageUrl: string;
+}

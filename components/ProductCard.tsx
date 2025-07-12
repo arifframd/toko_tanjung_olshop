@@ -41,7 +41,7 @@ const ProductCard = ({ product }: { product: Product }) => {
               <p className="product-price">Rp. {priceFormat}</p>
             </div>
             <p className="product-description">{description}</p>
-            <Link href={`/product/${_id}`}>
+            <Link href={`/product/${_id}/detail`}>
               <Button className="product-button cursor-pointer">Detail</Button>
             </Link>
           </div>
